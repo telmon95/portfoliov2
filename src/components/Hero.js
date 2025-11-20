@@ -104,7 +104,17 @@ const Hero = () => {
           <div className="hero-avatar">
             <div className="avatar-glow"></div>
             <div className="avatar-content">
-              <span>TM</span>
+              <img 
+                src="/profile-photo.jpg" 
+                alt="Telmon Maluleka" 
+                className="avatar-image"
+                onError={(e) => {
+                  // Fallback to initials if image not found
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <span className="avatar-fallback" style={{ display: 'none' }}>TM</span>
             </div>
           </div>
         </motion.div>
