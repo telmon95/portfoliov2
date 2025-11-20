@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telmon Fermino Maluleka - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        
+        .header .title {
+            font-size: 18px;
+            color: #6366f1;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #6366f1;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .subsection {
+            margin-bottom: 20px;
+        }
+        
+        .subsection h3 {
+            font-size: 18px;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        .subsection h4 {
+            font-size: 16px;
+            color: #4b5563;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .subsection p, .subsection li {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 5px;
+        }
+        
+        .subsection ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        .subsection ul li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #6366f1;
+        }
+        
+        .skill-category strong {
+            color: #1f2937;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .project-item {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-left: 3px solid #6366f1;
+        }
+        
+        .project-item h4 {
+            color: #6366f1;
+            margin-bottom: 8px;
+        }
+        
+        .project-item .github-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .project-item .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .work-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #e5e7eb;
+        }
+        
+        .work-item h4 {
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+        
+        .work-item .duration {
+            color: #6366f1;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Telmon Fermino Maluleka</h1>
+            <div class="title">Full-Stack Software Engineer</div>
+            <div class="contact-info">
+                <span>📧 telmonm@gmail.com</span>
+                <span>📱 0691119555</span>
+                <span>🌐 portfoliotff.netlify.app</span>
+                <span>💼 linkedin.com/in/telmon-maluleka-9a0699146</span>
+                <span>💻 github.com/telmon95</span>
+                <span>🐦 @DEOXYRIBOSE404</span>
+            </div>
+            <div style="margin-top: 10px; font-size: 13px; color: #6b7280;">
+                209 Craig's Place, 457 Steve Biko Road, Arcadia, 0083
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Full-Stack Software Engineer with a passion for technology and programming. Proficient in 
+                languages such as C, Python, JavaScript, HTML, and CSS, and experienced in frameworks like 
+                React, Django, and Node.js and AWS. Skilled in building web applications and APIs, and well-
+                versed in database management with MySQL. Enthusiastic about learning new technologies 
+                and solving complex problems through code.
+            </p>
+            <p style="margin-top: 10px;">
+                I have foundational Knowledge on Ethical Hacking and Web Security.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Programming Languages:</strong>
+                    C, Bash, Python, JavaScript, HTML, CSS, TypeScript, MySQL
+                </div>
+                <div class="skill-category">
+                    <strong>Frameworks/Libraries:</strong>
+                    React, Node.js, Django, Flask, Express
+                </div>
+                <div class="skill-category">
+                    <strong>Tools & Platforms:</strong>
+                    Git, GitHub, AWS, MongoDB, Cloudinary
+                </div>
+                <div class="skill-category">
+                    <strong>Other:</strong>
+                    REST APIs, JWT Authentication, AI Integration (OpenAI)
+                </div>
+                <div class="skill-category">
+                    <strong>Soft Skills:</strong>
+                    Leadership, Problem-solving, Communication
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Experience</h2>
+            
+            <div class="project-item">
+                <h4>1. JobSeeker AI – Full-Stack Job Application Automation Platform</h4>
+                <p><strong>GitHub:</strong> <a href="https://github.com/telmon95/JobSeeker" class="github-link" target="_blank">github.com/telmon95/JobSeeker</a></p>
+                <p style="margin-top: 10px;">A full-stack platform that automates and streamlines the job search process using multi-API job sourcing, AI-driven document parsing, and tailored cover letter generation.</p>
+                <ul style="margin-top: 10px;">
+                    <li><strong>Backend Development:</strong> Built a RESTful API with Node.js, Express, and TypeScript, implementing JWT-based authentication and secure, role-protected endpoints for user operations.</li>
+                    <li><strong>Job Sourcing Engine:</strong> Integrated Adzuna and Jooble APIs to fetch, normalize, and de-duplicate job postings, producing a unified and comprehensive job feed.</li>
+                    <li><strong>CV Parsing Pipeline:</strong> Leveraged the Affinda API to automatically extract skills, work experience, and contact details from uploaded PDF/DOCX CVs.</li>
+                    <li><strong>AI-Powered Cover Letters:</strong> Integrated the OpenAI GPT-3.5-Turbo API to dynamically generate tailored cover letters based on parsed CV data and job descriptions.</li>
+                    <li><strong>Frontend Development:</strong> Designed a responsive React + TypeScript interface with React Router for navigation and Context API for global state management.</li>
+                    <li><strong>Database Architecture:</strong> Implemented a MongoDB schema with Mongoose, linking Users, Jobs, and Applications for complete application lifecycle tracking.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h4>2. Cheaper Houses Nearby – Full-Stack Real Estate Platform</h4>
+                <p><strong>GitHub:</strong> <a href="https://github.com/telmon95/Cheaper-Houses-Nearby" class="github-link" target="_blank">github.com/telmon95/Cheaper-Houses-Nearby</a></p>
+                <p style="margin-top: 10px;">A MERN-stack real estate platform enabling users to search for properties, view detailed listings with image galleries, and manage their favorite homes.</p>
+                <ul style="margin-top: 10px;">
+                    <li><strong>Backend Development:</strong> Built a secure RESTful API with Node.js and Express to handle authentication, property listings, and user interactions.</li>
+                    <li><strong>Authentication & Security:</strong> Implemented JWT-based authentication and bcrypt.js password hashing to protect user data and private routes.</li>
+                    <li><strong>Image Handling:</strong> Developed a file upload pipeline using Multer and integrated Cloudinary API for cloud-based image storage, optimization, and fast delivery.</li>
+                    <li><strong>Frontend Development:</strong> Designed a responsive UI with React, Mantine UI components, and React Router for seamless navigation.</li>
+                    <li><strong>State Management:</strong> Used React Hooks and Context API to manage authentication state and favorite listings globally.</li>
+                    <li><strong>Database Design:</strong> Created a flexible MongoDB schema with Mongoose, modeling users and properties with relational links for efficient data retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h4>3. Child Mortality Visualization Dashboard</h4>
+                <p><strong>GitHub:</strong> <a href="https://github.com/telmon95" class="github-link" target="_blank">github.com/telmon95</a></p>
+                <p style="margin-top: 10px;">An interactive dashboard that visualizes under-5 child mortality rates across the world. The data is sourced from the World Bank and allows users to explore trends, compare countries, and view global distributions via charts and maps.</p>
+                <ul style="margin-top: 10px;">
+                    <li>Built with React and D3.js for interactive data visualization</li>
+                    <li>Integrated World Bank API for real-time data</li>
+                    <li>Implemented responsive charts and maps for data exploration</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h4>4. Sorting Algorithm Visualizer</h4>
+                <p><strong>GitHub:</strong> <a href="https://github.com/telmon95" class="github-link" target="_blank">github.com/telmon95</a></p>
+                <p style="margin-top: 10px;">A React application that visualizes various sorting algorithms in action, allowing users to see how different algorithms perform on sample data. Includes step-by-step execution and time complexity analysis.</p>
+                <ul style="margin-top: 10px;">
+                    <li>Built with React, Three.js for 3D visualization, and D3.js for 2D charts</li>
+                    <li>Interactive algorithm visualization with real-time performance metrics</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h4>5. WordPress Website Server Configuration and AWS EC2 Setup</h4>
+                <p style="margin-top: 10px;">Configured and launched WordPress websites on AWS EC2 instances, including server setup, security configuration, and deployment.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="work-item">
+                <h4>Full-Stack Software Engineer (Freelance)</h4>
+                <div class="duration">Present</div>
+                <p>Providing full-stack development services, building web applications, and delivering custom software solutions for clients.</p>
+            </div>
+
+            <div class="work-item">
+                <h4>Registered Nurse - Adult ICU</h4>
+                <div class="duration">Tembisa Provincial Tertiary Hospital | Since 2020</div>
+                <p>Gained experience working in high-pressure environments, maintaining accuracy and precision under stress, which translates into technical problem-solving skills in software development.</p>
+            </div>
+
+            <div class="work-item">
+                <h4>Cashier and Packer</h4>
+                <div class="duration">Spar | 2013 (1 year)</div>
+                <p>Developed excellent customer service and teamwork skills.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="work-item">
+                <h4>Certified Full-Stack Software Engineering</h4>
+                <div class="duration">ALX – Holberton School of Software Engineering | 2025</div>
+            </div>
+
+            <div class="work-item">
+                <h4>Diploma in Nursing (General, Psychiatry and Community) and Midwifery</h4>
+                <div class="duration">S.G Lourens Nursing College | 2018</div>
+            </div>
+
+            <div class="work-item">
+                <h4>Matric (Grade 12)</h4>
+                <div class="duration">Chipa Tabane Secondary School | 2013</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Personal Information</h2>
+            <div class="two-column">
+                <div>
+                    <p><strong>Date of Birth:</strong> 27th January 1995</p>
+                    <p><strong>Nationality:</strong> South African</p>
+                    <p><strong>Marital Status:</strong> Single</p>
+                    <p><strong>Health Status:</strong> Good</p>
+                </div>
+                <div>
+                    <p><strong>Languages:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 5px;">
+                        <li><strong>Speak:</strong> Xitsonga (Good), Northern Sotho (Good), English (Good), Zulu (Fair)</li>
+                        <li><strong>Read:</strong> Xitsonga (Good), Northern Sotho (Good), English (Good), Zulu (Good)</li>
+                        <li><strong>Write:</strong> Xitsonga (Good), Northern Sotho (Good), English (Good), Zulu (Good)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Positions of Responsibility</h2>
+            <div class="work-item">
+                <h4>Chairman</h4>
+                <div class="duration">Ikhayalami Lethemba Community Project | 2018</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">References</h2>
+            <div class="two-column">
+                <div class="work-item">
+                    <h4>Mr Molepo Malesela</h4>
+                    <p>Operational Manager, Tembisa Hospital</p>
+                    <p>Phone: 0724892778</p>
+                </div>
+                <div class="work-item">
+                    <h4>Mr Reagen Katie</h4>
+                    <p>Mentor</p>
+                    <p>Phone: 0713632399</p>
+                </div>
+                <div class="work-item">
+                    <h4>Mrs Zodwa Mabandla</h4>
+                    <p>Previous Clinical Facilitator</p>
+                    <p>Phone: 0626724569</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px;">
+            <button onclick="window.print()" style="background: #6366f1; color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; cursor: pointer; font-weight: 600;">
+                📄 Download/Print Resume
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
