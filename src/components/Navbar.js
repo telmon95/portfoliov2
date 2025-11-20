@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaBars, FaTimes, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaBars, FaTimes, FaFacebook } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = ({ isScrolled }) => {

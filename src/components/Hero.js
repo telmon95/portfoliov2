@@ -81,20 +81,17 @@ const Hero = () => {
             >
               View My Work
             </motion.button>
-            <motion.a
-              href="/resume.html"
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button
               className="btn btn-outline"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={(e) => {
-                // Open in new tab for viewing/printing
-                window.open('/resume.html', '_blank');
+              onClick={() => {
+                // Open resume in new tab for viewing/printing/downloading
+                window.open('/resume.html', '_blank', 'noopener,noreferrer');
               }}
             >
               <FaDownload /> Download Resume
-            </motion.a>
+            </motion.button>
           </motion.div>
         </motion.div>
         
