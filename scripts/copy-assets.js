@@ -11,14 +11,23 @@ if (!fs.existsSync(buildDir)) {
   process.exit(0);
 }
 
-// Copy profile photo
-const photoSource = path.join(publicDir, 'profile-photo.jpg');
-const photoDest = path.join(buildDir, 'profile-photo.jpg');
+// Copy profile photo (try multiple possible filenames)
+const possiblePhotoNames = ['profile-photo.jpg', '20251120_024908.jpg'];
+let photoCopied = false;
 
-if (fs.existsSync(photoSource)) {
-  fs.copyFileSync(photoSource, photoDest);
-  console.log('✅ Profile photo copied to build folder');
-} else {
+for (const photoName of possiblePhotoNames) {
+  const photoSource = path.join(publicDir, photoName);
+  const photoDest = path.join(buildDir, 'profile-photo.jpg');
+  
+  if (fs.existsSync(photoSource)) {
+    fs.copyFileSync(photoSource, photoDest);
+    console.log(`✅ Profile photo (${photoName}) copied to build folder`);
+    photoCopied = true;
+    break;
+  }
+}
+
+if (!photoCopied) {
   console.log('⚠️  Profile photo not found in public folder');
 }
 
