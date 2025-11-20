@@ -105,13 +105,15 @@ const Hero = () => {
             <div className="avatar-glow"></div>
             <div className="avatar-content">
               <img 
-                src="/profile-photo.jpg" 
+                src={process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/profile-photo.jpg` : '/profile-photo.jpg'}
                 alt="Telmon Maluleka" 
                 className="avatar-image"
                 onError={(e) => {
                   // Fallback to initials if image not found
                   e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
+                  if (e.target.nextSibling) {
+                    e.target.nextSibling.style.display = 'flex';
+                  }
                 }}
               />
               <span className="avatar-fallback" style={{ display: 'none' }}>TM</span>
