@@ -87,7 +87,10 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => {
                 // Open resume in new tab for viewing/printing/downloading
-                window.open('/resume.html', '_blank', 'noopener,noreferrer');
+                const resumeUrl = process.env.PUBLIC_URL 
+                  ? `${process.env.PUBLIC_URL}/resume.html` 
+                  : '/resume.html';
+                window.open(resumeUrl, '_blank', 'noopener,noreferrer');
               }}
             >
               <FaDownload /> Download Resume
