@@ -61,7 +61,7 @@ const About = () => {
           <motion.div className="about-text" variants={itemVariants}>
             <p className="about-intro">
               I am a <strong>Full-Stack Software Developer</strong> and <strong>Tech Enthusiast</strong> 
-              with a passion for creating innovative digital solutions. I specialize in building 
+               with a passion for creating innovative digital solutions. I specialize in building 
               scalable web applications that deliver exceptional user experiences.
             </p>
             <p>
