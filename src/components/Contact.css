@@ -1,6 +1,6 @@
 .contact {
   background: var(--bg-secondary);
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 .contact-container {
@@ -205,7 +205,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
 
   .contact-form {

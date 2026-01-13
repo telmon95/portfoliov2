@@ -1,6 +1,6 @@
 .projects {
   background: var(--bg-primary);
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 .projects-container {
@@ -139,7 +139,7 @@
 
 @media (max-width: 768px) {
   .projects {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
 
   .projects-grid {

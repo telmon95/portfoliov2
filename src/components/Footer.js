@@ -58,9 +58,6 @@ const Footer = () => {
           <p>
             © {currentYear} Telmon Maluleka. All rights reserved.
           </p>
-          <p className="footer-made-with">
-            Built with <span className="heart">❤️</span> using React
-          </p>
         </div>
       </div>
     </footer>

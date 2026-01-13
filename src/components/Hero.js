@@ -44,8 +44,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Full-Stack Software Developer
-            <span className="title-highlight"> & Tech Enthusiast</span>
+            Full-Stack Software Engineer
           </motion.h2>
           
           <motion.p

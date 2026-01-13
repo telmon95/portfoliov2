@@ -1,0 +1,128 @@
+.contributions {
+  background: var(--bg-secondary);
+  padding: 60px 20px;
+}
+
+.contributions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contribution-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contribution-card:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+}
+
+.contribution-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.contribution-content {
+  flex: 1;
+}
+
+.contribution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contribution-type {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contribution-date {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.contribution-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.contribution-organization {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.contribution-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contribution-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contribution-link:hover {
+  color: var(--secondary-color);
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .contributions {
+    padding: 40px 20px;
+  }
+
+  .contributions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contribution-card {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contribution-icon {
+    margin-bottom: 1rem;
+  }
+
+  .contribution-header {
+    justify-content: center;
+  }
+}

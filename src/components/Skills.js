@@ -9,8 +9,22 @@ import {
   FaNode,
   FaGitAlt,
   FaDatabase,
+  FaCode,
 } from 'react-icons/fa';
-import { SiTypescript, SiDjango, SiFlask, SiMysql } from 'react-icons/si';
+import { 
+  SiTypescript, 
+  SiDjango, 
+  SiFlask, 
+  SiMysql, 
+  SiMongodb, 
+  SiPostgresql, 
+  SiRedis, 
+  SiExpress, 
+  SiD3Dotjs, 
+  SiThreedotjs, 
+  SiAmazonaws, 
+  SiDocker
+} from 'react-icons/si';
 import './Skills.css';
 
 // Custom C icon component
@@ -23,34 +37,68 @@ const CIcon = () => (
   }}>C</span>
 );
 
+// Custom Bash icon component
+const BashIcon = () => (
+  <span style={{ 
+    fontSize: '2.5rem', 
+    fontWeight: 'bold', 
+    color: 'var(--primary-color)',
+    fontFamily: 'monospace'
+  }}>$</span>
+);
+
 const Skills = () => {
   const skillCategories = [
     {
       title: 'Programming Languages',
       skills: [
         { name: 'C', icon: <CIcon />, level: 85 },
+        { name: 'Bash', icon: <BashIcon />, level: 80 },
         { name: 'Python', icon: <FaPython />, level: 90 },
         { name: 'JavaScript', icon: <FaJs />, level: 90 },
         { name: 'TypeScript', icon: <SiTypescript />, level: 80 },
         { name: 'HTML5', icon: <FaHtml5 />, level: 95 },
         { name: 'CSS3', icon: <FaCss3Alt />, level: 90 },
+        { name: 'SQL', icon: <FaDatabase />, level: 85 },
       ],
     },
     {
       title: 'Frameworks & Libraries',
       skills: [
         { name: 'React', icon: <FaReact />, level: 90 },
+        { name: 'Node.js', icon: <FaNode />, level: 85 },
+        { name: 'Express', icon: <SiExpress />, level: 85 },
         { name: 'Django', icon: <SiDjango />, level: 85 },
         { name: 'Flask', icon: <SiFlask />, level: 80 },
-        { name: 'Node.js', icon: <FaNode />, level: 85 },
+        { name: 'D3.js', icon: <SiD3Dotjs />, level: 80 },
+        { name: 'Three.js', icon: <SiThreedotjs />, level: 75 },
       ],
     },
     {
-      title: 'Tools & Technologies',
+      title: 'Databases & Storage',
       skills: [
         { name: 'MySQL', icon: <SiMysql />, level: 85 },
+        { name: 'MongoDB', icon: <SiMongodb />, level: 85 },
+        { name: 'PostgreSQL', icon: <SiPostgresql />, level: 80 },
+        { name: 'Redis', icon: <SiRedis />, level: 75 },
+      ],
+    },
+    {
+      title: 'Tools & Platforms',
+      skills: [
         { name: 'Git', icon: <FaGitAlt />, level: 90 },
-        { name: 'Database Design', icon: <FaDatabase />, level: 80 },
+        { name: 'AWS', icon: <SiAmazonaws />, level: 75 },
+        { name: 'Docker', icon: <SiDocker />, level: 70 },
+        { name: 'Cloudinary', icon: <FaCode />, level: 75 },
+      ],
+    },
+    {
+      title: 'APIs & Security',
+      skills: [
+        { name: 'REST APIs', icon: <FaCode />, level: 85 },
+        { name: 'JWT Authentication', icon: <FaCode />, level: 80 },
+        { name: 'OpenAI API', icon: <FaCode />, level: 80 },
+        { name: 'Web Security', icon: <FaCode />, level: 75 },
       ],
     },
   ];

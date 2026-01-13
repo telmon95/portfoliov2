@@ -6,18 +6,7 @@
 }
 
 
-/* Section Spacing */
-section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 60px 20px;
-  }
-}
+/* Section Spacing - Individual sections handle their own padding */
 
 /* Smooth transitions */
 * {

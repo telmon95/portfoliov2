@@ -60,22 +60,25 @@ const About = () => {
         <div className="about-content">
           <motion.div className="about-text" variants={itemVariants}>
             <p className="about-intro">
-              I am a <strong>Full-Stack Software Developer</strong> and <strong>Tech Enthusiast </strong> ,   
-               with a passion for creating innovative digital solutions. I specialize in building 
-              scalable web applications that deliver exceptional user experiences.
+              I am a <strong>Full-Stack Software Engineer</strong> with strong experience in designing, 
+              developing, and deploying scalable web applications and APIs. I specialize in building 
+              innovative digital solutions that deliver exceptional user experiences.
             </p>
             <p>
               My expertise spans across multiple programming languages including <strong>C</strong>, 
-              <strong> Python</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, 
-              <strong> CSS</strong>, and <strong>TypeScript</strong>. I work extensively with modern 
-              frameworks like <strong>React</strong>, <strong>Django</strong>, <strong>Flask</strong>, 
-              and <strong>Node.js</strong>, and have hands-on experience with <strong>MySQL</strong> 
-              databases and <strong>Git</strong> version control.
+              <strong> Python</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, 
+              <strong> HTML</strong>, and <strong>CSS</strong>. I work extensively with modern 
+              frameworks like <strong>React</strong>, <strong>Node.js</strong>, <strong>Django</strong>, 
+              and <strong>Flask</strong>, and have hands-on experience with databases including 
+              <strong> MySQL</strong>, <strong>MongoDB</strong>, and <strong>PostgreSQL</strong>. 
+              I also have experience with cloud platforms such as <strong>AWS</strong>.
             </p>
             <p>
-              What drives me is the opportunity to solve complex problems, learn new technologies, 
-              and contribute to projects that make a real impact. I'm always eager to take on new 
-              challenges and collaborate with talented teams to build something amazing.
+              I demonstrate a strong security mindset with foundational knowledge of ethical hacking, 
+              web security, and secure authentication mechanisms. Known for analytical problem-solving, 
+              adaptability, and delivering reliable solutions in high-pressure environments. What drives 
+              me is the opportunity to solve complex problems, learn new technologies, and contribute 
+              to projects that make a real impact.
             </p>
           </motion.div>
 
