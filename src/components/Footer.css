@@ -95,25 +95,6 @@
   font-size: 0.9rem;
 }
 
-.footer-made-with {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.heart {
-  color: var(--secondary-color);
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
 
 @media (max-width: 768px) {
   .footer-content {
